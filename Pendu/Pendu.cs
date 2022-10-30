@@ -38,11 +38,8 @@ namespace Pendu
 
         private void GetMotRandom()
         {
-            //TODO: générer un int au hasard entre 0 et _motDisonibles.Length
-
             Random aleatoire = new Random();
-            int index = aleatoire.Next(0, _motDisonibles.Length); // Génère un entier compris entre 1 et 12
-
+            int index = aleatoire.Next(0, _motDisonibles.Length); 
             _motATrouver = _motDisonibles[index];
         }
 
